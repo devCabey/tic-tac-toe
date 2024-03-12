@@ -1,6 +1,6 @@
 const Square = ({ value, onClickSquare, level }) => {
   return (
-    <div className='square' onClick={() => onClickSquare(level)}>
+    <div className='border flex justify-center items-center border-black' onClick={() => onClickSquare(level)}>
       {value}
     </div>
   );

@@ -8,7 +8,7 @@ const Board = () => {
       combo.push(<Square value={'X'} onClickSquare={handleClick} level={i + j} />);
     }
   }
-  return <div className='board'>{combo.map((data) => data)}</div>;
+  return <div className='grid grid-cols-3 h-96 w-96'>{combo.map((data) => data)}</div>;
 };
 
 export default Board;
